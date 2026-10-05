@@ -1,0 +1,13 @@
+================================================================================
+Pocket Shell DevTools — Command Reference (skeleton)
+================================================================================
+Loader : pocket-shell-devtools.ps1
+Modules: pocket-shell-devtools\<section>\*.ps1
+Help   : psh-help
+Reload : reload
+
+Sections: shortcuts | commit | git | nav | npm | node | angular | util | help
+
+(Filled in as we define each section with you.)
+
+================================================================================

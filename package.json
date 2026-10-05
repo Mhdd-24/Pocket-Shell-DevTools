@@ -1,0 +1,49 @@
+{
+  "name": "@mhdd_24/pocket-shell-devtools",
+  "version": "0.1.0",
+  "description": "Generic PowerShell terminal shortcuts for personal laptops — git, nav, npm, Angular, utils, commit messages",
+  "type": "module",
+  "private": false,
+  "bin": {
+    "pocket-shell-devtools": "bin/pocket-shell-devtools.js"
+  },
+  "files": [
+    "bin",
+    "pocket-shell-devtools.ps1",
+    "pocket-shell-devtools/**/*",
+    "pocket-shell-devtools.local.ps1.example",
+    "pocket-shell-devtools-commands-reference.txt",
+    "scripts/**/*",
+    "README.md",
+    "docs/WIKI.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepack": "npm run verify",
+    "verify": "pwsh -NoProfile -Command \"Remove-Variable PocketShellDevToolsLoaded -Scope Global -EA 0; . ./pocket-shell-devtools.ps1; if (-not (Get-Command psh-help)) { throw 'load failed' }\""
+  },
+  "keywords": [
+    "powershell",
+    "devtools",
+    "git-shortcuts",
+    "angular",
+    "terminal",
+    "windows"
+  ],
+  "author": "Mhdd-24",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mhdd-24/Pocket-Shell-DevTools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mhdd-24/Pocket-Shell-DevTools/issues"
+  },
+  "homepage": "https://github.com/Mhdd-24/Pocket-Shell-DevTools#readme",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  }
+}

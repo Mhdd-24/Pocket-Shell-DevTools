@@ -1,0 +1,21 @@
+# Copy to pocket-shell-devtools.local.ps1 (same folder as the loader).
+# pocket-shell-devtools.local.ps1 is gitignored.
+
+# Optional: fixed code home
+# $script:CODE_HOME = 'D:\Mohammed-Rafi\Github'
+# $script:CODEBASE  = $script:CODE_HOME
+# $CODE_HOME = $script:CODE_HOME
+# $CODEBASE  = $script:CODE_HOME
+
+# Optional: default trunk branch for gcom / gplm / nb
+# $script:PsDefaultBranch = 'main'
+
+# Banner author (or POCKET_SHELL_AUTHOR_NAME / POCKET_SHELL_AUTHOR_EMAIL, or git config)
+# $script:PocketShellAuthorName  = 'Your Name'
+# $script:PocketShellAuthorEmail = 'you@example.com'
+
+# Repo aliases for commit helpers and `sublime gplm`-style navigation
+# $script:RepoMap = [ordered]@{
+#   'sublime' = 'Sublime-MCP'
+#   'pocket'  = 'Pocket-Shell-DevTools'
+# }

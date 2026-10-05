@@ -1,0 +1,4 @@
+pocket-shell-devtools.local.ps1
+*.log
+.DS_Store
+node_modules/
